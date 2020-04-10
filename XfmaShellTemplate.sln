@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XfmaShellTemplate.iOS", "Xf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XfmaShellTemplate", "XfmaShellTemplate\XfmaShellTemplate.csproj", "{C29752C6-E376-4173-BBC3-CA2DC44F44D0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{B4FABFB7-5DAC-4174-99E1-30A9F60B90EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsMvvmAdaptor", "..\XamarinFormsMvvmAdaptor\XamarinFormsMvvmAdaptor\XamarinFormsMvvmAdaptor.csproj", "{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +57,20 @@ Global
 		{C29752C6-E376-4173-BBC3-CA2DC44F44D0}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{C29752C6-E376-4173-BBC3-CA2DC44F44D0}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{C29752C6-E376-4173-BBC3-CA2DC44F44D0}.Release|iPhone.Build.0 = Release|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5}.Release|iPhone.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9396A4A-DCEA-4778-80A8-4D65A89A5EA5} = {B4FABFB7-5DAC-4174-99E1-30A9F60B90EA}
 	EndGlobalSection
 EndGlobal
