@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+using XfmaShellTemplate.Views;
 
 namespace XfmaShellTemplate
 {
@@ -10,6 +8,7 @@ namespace XfmaShellTemplate
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("newItem", typeof(NewItemPage));
         }
     }
 }
