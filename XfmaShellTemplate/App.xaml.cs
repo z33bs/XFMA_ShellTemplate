@@ -2,6 +2,7 @@
 using XfmaShellTemplate.Services;
 using XamarinFormsMvvmAdaptor;
 using XfmaShellTemplate.Models;
+using XfmaShellTemplate.Views;
 
 namespace XfmaShellTemplate
 {
@@ -23,6 +24,12 @@ namespace XfmaShellTemplate
             ViewModelLocator.Ioc
                 .Register<MockDataStore>()
                 .As<IDataStore<Item>>();
+            ViewModelLocator.Ioc
+                .Register<MockDogStore>()
+                .As<IDataStore<Dog>>()
+                .SingleInstance();
+
+            Routing.RegisterRoute("dogDetail", typeof(DogDetailPage));
 
             MainPage = new AppShell();
         }

@@ -19,7 +19,7 @@ namespace XfmaShellTemplate.ViewModels
             this.navigationService = navigationService;
             this.dataStore = dataStore;
 
-            Title = "Browse";
+            Title = "List";
             Items = new ObservableRangeCollection<Item>();
 
             messagingCenter.Subscribe<NewItemViewModel, Item>(this, "AddItem", async (obj, item) =>

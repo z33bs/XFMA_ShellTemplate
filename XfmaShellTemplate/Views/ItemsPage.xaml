@@ -7,7 +7,6 @@
     mc:Ignorable="d"
     x:Class="XfmaShellTemplate.Views.ItemsPage"
     Title="{Binding Title}"
-    x:Name="BrowseItemsPage"
 
     xmlns:mvvm="clr-namespace:XamarinFormsMvvmAdaptor;assembly=XamarinFormsMvvmAdaptor"
     mvvm:ViewModelLocator.AutoWireViewModel="True"
