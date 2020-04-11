@@ -13,6 +13,9 @@ namespace XfmaShellTemplate.ViewModels
             set => SetProperty(ref item, value);
         }
 
+        //XFMA - Async method that is triggered immediately after
+        //push. Optionally recieves an incomming object from the
+        //pushing ViewModel.
         public override Task OnViewPushedAsync(object navigationData)
         {
             var item = navigationData as Item;

@@ -6,6 +6,8 @@ using XfmaShellTemplate.Services;
 
 namespace XfmaShellTemplate.ViewModels
 {
+    //XFMA - Recieves the QueryString from GoToAsync
+    //and sets the property accordingly
     [QueryProperty("DogId", "dogId")]
     public class DogDetailViewModel : MvvmViewModelBase
     {

@@ -14,6 +14,7 @@ namespace XfmaShellTemplate.ViewModels
             Title = "About";
         }
 
+        //XFMA - Another example of GoToAsync, using routes
         public ICommand JumpCommand
             => new Command(async () => await navigationService.GoToAsync("///dogs"));
     }

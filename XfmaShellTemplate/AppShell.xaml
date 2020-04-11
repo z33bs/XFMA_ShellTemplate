@@ -31,7 +31,7 @@
             <ShellContent
                 ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
-
+        <!--XFMA - Note the Route. Used to navigate to from AboutViewModel-->
         <Tab Title="Dogs" Icon="paw.png">
             <ShellContent
                 Route="dogs"

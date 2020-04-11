@@ -51,8 +51,13 @@ namespace XfmaShellTemplate.ViewModels
         }
 
         public ICommand DogSelectedCommand
-            => new Command<Dog>(async (Dog item)
-                => await navigationService.GoToAsync($"dogDetail?dogId={item.Id}"));
+            => new Command<Dog>(async (Dog item) =>
+            {
+                //XFMA - Alternate navigation option, using Shell's GoToAsync.
+                //Information can be sent as a query string. Here we send
+                //the object's id
+                await navigationService.GoToAsync($"dogDetail?dogId={item.Id}");
+            });
 
         public override void OnViewAppearing(object sender, EventArgs e)
         {
