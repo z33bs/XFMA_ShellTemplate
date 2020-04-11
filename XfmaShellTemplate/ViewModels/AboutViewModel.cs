@@ -1,11 +1,11 @@
-﻿using System;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using XamarinFormsMvvmAdaptor;
 
 namespace XfmaShellTemplate.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class AboutViewModel : MvvmViewModelBase
     {
         public AboutViewModel()
         {
