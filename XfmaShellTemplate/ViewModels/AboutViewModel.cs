@@ -1,18 +1,21 @@
-﻿using System;
-using System.Windows.Input;
-using Xamarin.Essentials;
+﻿using System.Windows.Input;
 using Xamarin.Forms;
+using XamarinFormsMvvmAdaptor;
 
 namespace XfmaShellTemplate.ViewModels
 {
-    public class AboutViewModel : BaseViewModel
+    public class AboutViewModel : MvvmViewModelBase
     {
-        public AboutViewModel()
+        readonly INavigationService navigationService;
+
+        public AboutViewModel(INavigationService navigationService)
         {
+            this.navigationService = navigationService;
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://xamarin.com"));
         }
 
-        public ICommand OpenWebCommand { get; }
+        //XFMA - Another example of GoToAsync, using routes
+        public ICommand JumpCommand
+            => new Command(async () => await navigationService.GoToAsync("///dogs"));
     }
 }

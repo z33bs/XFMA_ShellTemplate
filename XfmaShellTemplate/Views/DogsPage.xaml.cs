@@ -2,9 +2,9 @@
 
 namespace XfmaShellTemplate.Views
 {
-    public partial class ItemsPage : ContentPage
+    public partial class DogsPage : ContentPage
     {
-        public ItemsPage()
+        public DogsPage()
         {
             InitializeComponent();            
         }
